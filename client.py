@@ -12,10 +12,9 @@ import os
 import shutil
 import discord
 
-bot_token = ""
 btcAdd = ""
 email = ""
-discordWebhook = ""
+Webhook = ""
 channel_id = ""
 
 
